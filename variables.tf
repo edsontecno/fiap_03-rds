@@ -8,7 +8,7 @@ variable "db_password" {
   description = "The password for the RDS instance"
   type        = string
   sensitive   = true
-  default     = "eds12345678"
+  default     = "eds123456789"
 }
 
 variable "db_instance_class" {
