@@ -16,3 +16,13 @@ variable "db_instance_class" {
   type        = string
   default     = "db.t3.micro"
 }
+
+variable "master_username" {
+  type = string
+  default = "root123456"
+}
+
+variable "master_password" {
+  type = string
+  default = "root123456"
+}
