@@ -32,12 +32,12 @@ resource "aws_db_instance" "bd_dominio" {
 
 # DynamoDB Table
 resource "aws_dynamodb_table" "dynamo_db" {
-  name           = "payment"
+  name           = "Payment"
   billing_mode   = "PAY_PER_REQUEST"
   hash_key       = "id"         # Definindo "id" como chave primária (hash key)
   attribute {
     name = "id"
-    type = "S" # Tipo String
+    type = "S"
   }
   tags = {
     Name = "payment"
